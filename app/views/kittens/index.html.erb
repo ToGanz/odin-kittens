@@ -1,0 +1,4 @@
+<% provide(:title, 'All kittens') %>
+<h1>Kittens</h1>
+<%= link_to 'Add kitten', new_kitten_path %>
+<%= render @kittens if !@kittens.nil? %>
